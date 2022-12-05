@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger menu-øvelse</title>
+  <link rel="stylesheet" href="css/demo.css">
+  <!-- Ret i nedenståendde stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="banner">
+    <div class="logo">
+      <a href="#0">Logo</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2>Kontakt os</h2>
+        <p>
+          Udfyld kontaktformularen for at kontakte os. Vi glæder os til at
+          høre fra dig.
+        </p>
+      </header>
+
+      <form>
+        <!-- Formular-indhold -->
+        <div class="form-felt">
+          <h3>Her er en formel.</h3>
+          <label for="fornavn">Fornavn</label>
+          <input placeholder="fx. Gitte" id="fornavn" name="fornavn" type="text" required>
+
+          <label for="efternavn">Efternavn</label>
+          <input placeholder="fx. Jensen" id="efternavn" name="efternavn" type="text" required>
+
+          <label for="email">E-mail</label>
+          <input placeholder="fx. Gitte@Jensen.dk" id="email" name="email" type="email" required>
+
+          <label>
+            Profil
+            <select name="liste" required>
+              <option value="">Vælg profil</option>
+              <option value="studerende">Studerende</option>
+              <option value="underviser">Underviser</option>
+            </select>
+          </label>
+          <label>
+            Besked (valgfri) <br>
+            <textarea placeholder="fx. Hej mit navn er Gitte Jensen" name="besked" rows="5" required></textarea>
+          </label>
+
+
+          <button>Indsend</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
